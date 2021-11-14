@@ -8,6 +8,7 @@ input.onButtonPressed(Button.B, function () {
 })
 pins.digitalWritePin(DigitalPin.P0, 0)
 led.unplot(0, 0)
+// main program loop
 loops.everyInterval(86400000, function () {
     pins.digitalWritePin(DigitalPin.P0, 1)
     led.plot(0, 0)
